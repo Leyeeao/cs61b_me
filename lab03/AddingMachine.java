@@ -16,9 +16,16 @@ public class AddingMachine {
         // TODO Add code anywhere below to complete AddingMachine
 		while (true) {
 			input = scanner.nextInt();
+			listOfInputs[index++] = input;
 			if (input == 0) {
 				if (isPreviousZero) {
 					System.out.println("total " + total);
+					for (int i:listOfInputs) {
+						if (i == 0) {
+							continue;
+						}
+						System.out.println(i);
+					}
 					return;
 				} else {
 					System.out.println("subtotal " + subtotal);
