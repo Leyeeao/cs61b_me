@@ -1,3 +1,5 @@
+import jh61b.junit.In;
+
 /** A data structure to represent a Linked List of Integers.
  * Each IntList represents one node in the overall Linked List.
  *
@@ -49,8 +51,19 @@ public class IntList {
      * @return The element at [position]
      */
     public int get(int position) {
-        //TODO: YOUR CODE HERE
-        return -1;
+        if (position < 0) {
+            throw  new IllegalArgumentException("Please input position within indexing range.");
+        }
+        else {
+            if (position == 0) {
+                return item;
+            }
+            if (next == null){
+                throw  new IllegalArgumentException("Please input position within indexing range.");
+            }
+            return next.get(position - 1);
+        }
+
     }
 
     /**
@@ -61,7 +74,14 @@ public class IntList {
      */
     public String toString() {
         //TODO: YOUR CODE HERE
-        return null;
+        IntList p = this;
+        String res = new String();
+        while (p.next != null) {
+            res += p.item + " ";
+            p = p.next;
+        }
+        res += p.item;
+        return res;
     }
 
     /**
@@ -82,10 +102,19 @@ public class IntList {
             return false;
         }
         IntList otherLst = (IntList) obj;
+        IntList thisLst = this;
+        while (otherLst != null) {
+            if (thisLst.item != otherLst.item || thisLst == null) {
+                return false;
+            }
+            thisLst = thisLst.next;
+            otherLst = otherLst.next;
+        }
+        if (thisLst != null) {
+            return false;
+        }
 
-        //TODO: YOUR CODE HERE
-
-        return false;
+        return true;
     }
 
     /**
@@ -94,7 +123,12 @@ public class IntList {
      * @param value, the int to be added.
      */
     public void add(int value) {
-        //TODO: YOUR CODE HERE
+        IntList last = new IntList(value,null);
+        IntList p = this;
+        while (p.next != null) {
+            p = p.next;
+        }
+        p.next = last;
     }
 
     /**
@@ -103,8 +137,15 @@ public class IntList {
      * @return smallest element in the list
      */
     public int smallest() {
-        //TODO: YOUR CODE HERE
-        return -1;
+        IntList p = this;
+        int min = p.item;
+        while (p != null) {
+            if (p.item < min) {
+                min = p.item;
+            }
+            p = p.next;
+        }
+        return min;
     }
 
     /**
@@ -113,8 +154,13 @@ public class IntList {
      * @return The sum of squares of all elements.
      */
     public int squaredSum() {
-        //TODO: YOUR CODE HERE
-        return -1;
+        IntList p = this;
+        int sum = 0;
+        while (p != null) {
+            sum += p.item * p.item;
+            p = p.next;
+        }
+        return sum;
     }
 
     /**
@@ -171,8 +217,18 @@ public class IntList {
      * @return new list with A followed by B.
      */
     public static IntList dcatenate(IntList A, IntList B) {
-        //TODO: YOUR CODE HERE
-        return null;
+        IntList L = A;
+        if (A == null) {
+            return B;
+        }
+        if (B == null) {
+            return A;
+        }
+        while (L.next != null) {
+            L = L.next;
+        }
+        L.next = B;
+        return A;
     }
 
     /**
@@ -184,7 +240,26 @@ public class IntList {
      * @return new list with A followed by B.
      */
      public static IntList catenate(IntList A, IntList B) {
-        //TODO: YOUR CODE HERE
-        return null;
+         if (A == null) {
+             return B;
+         }
+         if (B == null) {
+             return A;
+         }
+         IntList res = new IntList(0,null);
+         IntList p = res;
+         IntList pa = A;
+         IntList pb = B;
+         while (pa != null) {
+             p.next = new IntList(pa.item, null);
+             p = p.next;
+             pa = pa.next;
+         }
+         while (pb != null) {
+             p.next = new IntList(pb.item, null);
+             p = p.next;
+             pb = pb.next;
+         }
+         return res.next;
      }
 }
