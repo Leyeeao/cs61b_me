@@ -1,3 +1,5 @@
+import jh61b.junit.In;
+
 /**
  * An SLList is a list of integers, which encapsulates the
  * naked linked list structure.
@@ -121,11 +123,37 @@ public class SLList {
 
     /** Adds x to the list at the specified index. */
     public void add(int index, int x) {
+        IntListNode p = sentinel;
+        while (index > 0 && p.next != sentinel) {
+            p = p.next;
+            index -= 1;
+        }
+        p.next = new IntListNode(x, p.next);
+        size += 1;
         // TODO
     }
 
     /** Destructively reverses this list. */
     public void reverse() {
-        // TODO
+        if (size <= 1) {
+            return;
+        }
+        IntListNode head = sentinel;
+        for (int i = size; i > 0; i--) {
+            head = head.next;
+        }
+        IntListNode last = head;
+        size -= 1;
+        while (size > 0) {
+            IntListNode p = sentinel;
+            for (int i = size; i > 0; i--){
+                p = p.next;
+            }
+            last.next = p;
+            last = last.next;
+            size -= 1;
+        }
+        last.next = sentinel;
+        sentinel.next = head;
     }
 }
