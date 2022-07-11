@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="271a8b9e-9e91-4bdf-9ef8-5fe6c3f4f746" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../lab04/DebugExercise2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab04/DebugExercise2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab04/Measurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab04/Measurement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab04/MeasurementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab04/MeasurementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab04/ModNCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab04/ModNCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab04/ModNCounterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab04/ModNCounterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooleanSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooleanSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ListSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/ListSet.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2BoFjdY9zje0DQmr5SqZQY9dx5M" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/meiting/Downloads/cs61/cs61b_me/lab07",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.BooleanSetTest">
+    <configuration name="BooleanSetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab07" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BooleanSetTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListSetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab07" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ListSetTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BooleanSetTest" />
+        <item itemvalue="JUnit.ListSetTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="271a8b9e-9e91-4bdf-9ef8-5fe6c3f4f746" name="Changes" comment="" />
+      <created>1657564666498</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657564666498</updated>
+    </task>
+    <servers />
+  </component>
+</project>
