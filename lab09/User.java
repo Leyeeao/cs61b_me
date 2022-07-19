@@ -1,7 +1,8 @@
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Objects;
 
-public class User {
+public class User implements Comparable<User> {
 
     private static int nextId = 1;
 
@@ -57,6 +58,24 @@ public class User {
         return "User{" + "id=" + id + ", name=" + name + ", email=" + email + "}";
     }
 
+    public int compareTo(User otherUser) {
+        if(this.id != otherUser.id) {
+            return this.id - otherUser.id;
+        } else{
+            return getNameComparator().compare(this, otherUser);
+        }
+    }
+
+    private static class NameComparator implements Comparator<User> {
+        public int compare(User a, User b){
+            return a.name.compareTo(b.name);
+        }
+    }
+
+    public static Comparator<User> getNameComparator() {
+        return new NameComparator();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -74,6 +93,8 @@ public class User {
             return Objects.equals(email, other.email);
         }
     }
+
+
 
     public static void main(String[] args) {
         User[] users = {

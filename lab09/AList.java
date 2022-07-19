@@ -11,6 +11,25 @@ public class AList<Item> {
     private Item[] items;
     private int size;
 
+
+
+    public Iterator<Item> iterator() {
+        return new AListIterator();
+    }
+
+    private class AListIterator implements Iterator<Item> {
+        private int idx = 0;
+
+        public Item next(){
+            Item curr = items[idx];
+            idx = idx + 1;
+            return curr;
+        }
+
+        public boolean hasNext() {
+            return idx < size;
+        }
+    }
     /** Creates an empty AList. */
     public AList() {
 	items = (Item[]) new Object[8];

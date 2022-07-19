@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ec7a0ab7-343e-4044-ba13-c26d94070a42" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../lab04/DebugExercise2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab04/DebugExercise2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab04/Measurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab04/Measurement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab04/MeasurementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab04/MeasurementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab04/ModNCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab04/ModNCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab04/ModNCounterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab04/ModNCounterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab08/testing/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AList.java" beforeDir="false" afterPath="$PROJECT_DIR$/AList.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2CAKBDtXum4LdXVwPAPI34sLdow" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/meiting/Downloads/cs61/cs61b_me/lab09",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.AListTest.testFor">
+    <configuration name="User" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="User" />
+      <module name="lab09" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AListTest.testFor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab09" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AListTest" />
+      <option name="METHOD_NAME" value="testFor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AListTest.testFor" />
+        <item itemvalue="Application.User" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec7a0ab7-343e-4044-ba13-c26d94070a42" name="Changes" comment="" />
+      <created>1658239812817</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658239812817</updated>
+    </task>
+    <servers />
+  </component>
+</project>
