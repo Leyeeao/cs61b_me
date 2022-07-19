@@ -2,11 +2,11 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class CounterTest {
+public class ModNCounterTest {
 
     @Test
     public void increment() {
-        Counter c = new Counter();
+        ModNCounter c = new ModNCounter(2);
         c.increment();
         assertEquals(1, c.value());
         c.increment();
@@ -15,7 +15,7 @@ public class CounterTest {
 
     @Test
     public void reset() {
-        Counter c = new Counter();
+        ModNCounter c = new ModNCounter(2);
         c.increment();
         c.reset();
         assertEquals(0, c.value());
@@ -23,7 +23,8 @@ public class CounterTest {
 
     @Test
     public void testConstructor() {
-        Counter c = new Counter();
+        ModNCounter c = new ModNCounter(2);
         assertEquals(0, c.value());
     }
+
 }

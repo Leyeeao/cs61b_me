@@ -3,13 +3,16 @@
  * should be _well-formed_, that is, the number of inches should not be >= 12.
  */
 public class Measurement {
+    private int myFeet;
+    private int myInches;
 
     /**
      * Constructor: initialize this object to be a measurement of 0 feet, 0
      * inches
      */
     public Measurement() {
-
+        myFeet = 0;
+        myInches = 0;
     }
 
     /**
@@ -17,7 +20,8 @@ public class Measurement {
      * the number of inches
      */
     public Measurement(int feet) {
-
+        myFeet = feet;
+        myInches = 0;
     }
 
     /**
@@ -26,7 +30,8 @@ public class Measurement {
      * initialization
      */
     public Measurement(int feet, int inches) {
-
+        myFeet = feet;
+        myInches = inches;
     }
 
     /**
@@ -34,7 +39,8 @@ public class Measurement {
      * Measurement has 1 foot and 6 inches, this method should return 1.
      */
     public int getFeet() {
-        return 0; // provided to allow the file to compile
+        return this.myFeet;
+        // provided to allow the file to compile
     }
 
     /**
@@ -42,7 +48,8 @@ public class Measurement {
      * Measurement has 1 foot and 6 inches, this method should return 6.
      */
     public int getInches() {
-        return 0; // provided to allow the file to compile
+        return this.myInches;
+        // provided to allow the file to compile
     }
 
     /**
@@ -52,7 +59,10 @@ public class Measurement {
      * @return a new Measurement containing the sum of this and m2.
      */
     public Measurement plus(Measurement m2) {
-        return new Measurement(); // provided to allow the file to compile
+        myFeet = this.myFeet + m2.myFeet + (this.myInches + m2.myInches)/12;
+        myInches = (this.myInches + m2.myInches) % 12;
+        return new Measurement(myFeet, myInches);
+    // provided to allow the file to compile
     }
 
     /**
@@ -63,7 +73,10 @@ public class Measurement {
      * @return a new Measurement containing the difference of this and m2.
      */
     public Measurement minus(Measurement m2) {
-        return new Measurement(); // provided to allow the file to compile
+        myFeet = this.myFeet - m2.myFeet - 1 + (12 + this.myInches - m2.myInches) / 12;
+        myInches = (12 + this.myInches - m2.myInches) % 12;
+        return new Measurement(myFeet, myInches);
+        // provided to allow the file to compile
     }
 
     /**
@@ -78,7 +91,9 @@ public class Measurement {
      * @return a new Measurement containing this times multipleAmount
      */
     public Measurement multiple(int multipleAmount) {
-        return new Measurement(); // provided to allow the file to compile
+        myFeet = this.myFeet * multipleAmount + this.myInches * multipleAmount / 12;
+        myInches = this.myInches * multipleAmount * 12;
+        return new Measurement(myFeet,myInches); // provided to allow the file to compile
     }
 
     /**
@@ -92,7 +107,7 @@ public class Measurement {
      */
     @Override
     public String toString() {
-        return ""; // provided to allow the file to compile
+        return this.myFeet + '\'' + this.myInches + "\""; // provided to allow the file to compile
     }
 
 }
