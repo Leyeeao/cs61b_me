@@ -1,7 +1,7 @@
 /**
  *  A class used to analyze the runtime of sorting algorithms*/
 
-
+// Meiting: the smallest array size that I found that takes at least 1 sec to sort is 92000.
 public class Sorter {
 
     /* Uses insertion sort to sort the elements of VALUES by inserting item k
