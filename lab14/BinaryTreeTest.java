@@ -20,4 +20,29 @@ public class BinaryTreeTest {
         assertEquals("x in preorder\nC A B E D \nx in inorder\nA B C D E \n\n".trim(),
                      outContent.toString().trim());
     }
+    @Test
+    public void containsTest() {
+        BinarySearchTree<String> x = new BinarySearchTree<String>();
+        x.add("C");
+        x.add("A");
+        x.add("E");
+        x.add("B");
+        x.add("D");
+        assertTrue(x.contains("A"));
+        assertFalse(x.contains("Z"));
+
+    }
+
+    @Test
+    public void deleteTest() {
+        BinarySearchTree<String> x = new BinarySearchTree<String>();
+        x.add("C");
+        x.add("A");
+        x.add("E");
+        x.add("B");
+        x.add("D");
+        assertTrue(x.contains("A"));
+        x.delete("A");
+        assertFalse(x.contains("A"));
+    }
 }
