@@ -48,9 +48,20 @@ public class BinaryTree<T> {
         BinaryTree<Integer> result = new BinaryTree<Integer>();
         if (N == 0 || N == 1) {
             result.root = new TreeNode<>(N);
+            return result;
         }
-        result.root = new TreeNode<>(N, fibTree(N-1).root, fibTree(N-2).root);
+        result.root = new TreeNode<>(fibonacci(N), fibTree(N-1).root, fibTree(N-2).root);
         return result;
+    }
+
+    /**
+     *  first three number in series are
+     * 0, 1, 1
+     * so return numbers as is
+     */
+    private static int fibonacci(int n) {
+        if (n < 2) {return n;}
+        return fibonacci(n - 1) + fibonacci(n - 2);
     }
 
     /* Print the values in the tree in preorder: root value first, then values
@@ -136,7 +147,10 @@ public class BinaryTree<T> {
         print(t, "sample tree 4");
         System.out.println("The height of sample tree 4:" + t.height());
         System.out.println("Is sample tree 4 completedly balanced:" + t.isCompletelyBalanced());
-
+        BinaryTree<Integer> fib = new BinaryTree().fibTree(5);
+        print(fib, "the Fibonacci tree of 5");
+        System.out.println("The height of the Fibonacci tree of 5:" + fib.height());
+        System.out.println("Is the Fibonacci tree of 5 completedly balanced:" + fib.isCompletelyBalanced()+"\n");
     }
 
     /* Note: this class is public in this lab for testing purposes. However,
